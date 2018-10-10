@@ -9,8 +9,15 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": "Vitor Manfré",
+  "contributors": [
+    "Vitor Manfré"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tegraoss/react-native-connection-status"
+  },
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2",
     "react-native-windows": "0.41.0-rc.1"
