@@ -29,7 +29,7 @@ can access the internet, it only checks if the device is connected to a network
       compile project(':react-native-connection-status')
   	```
 
-#### IOS
+#### iOS
 
 1. In XCode, right-click the Libraries folder under your project ➜ Add Files to <your project>
 
