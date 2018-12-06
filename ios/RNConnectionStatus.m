@@ -1,13 +1,21 @@
-
 #import "RNConnectionStatus.h"
 
 @implementation RNConnectionStatus
 
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
+RCT_EXPORT_MODULE();
+
+RCT_EXPORT_METHOD(hasInternetConnection:(RCTResponseSenderBlock)callback) {
+
+    NSURL *scriptUrl = [NSURL URLWithString:@"https://www.google.com/m"];
+    NSData *data = [NSData dataWithContentsOfURL:scriptUrl];
+    NSString *result;
+
+    if (data)
+        result = @"true";
+    else
+        result = @"false";
+
+    callback(@[result]);
 }
-RCT_EXPORT_MODULE()
 
 @end
-  

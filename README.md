@@ -29,6 +29,14 @@ can access the internet, it only checks if the device is connected to a network
       compile project(':react-native-connection-status')
   	```
 
+#### iOS
+
+1. In XCode, right-click the Libraries folder under your project ➜ `Add Files to <your project>`
+
+2. Go to node_modules ➜ react-native-connection-status ➜ ios and add the `RNConnectionStatus.xcodeproj` file
+
+3. Go to your apps project settings ➜ "Build Phases" ➜ "Link Binary With Libraries" and add `libRNConnectionStatus.a` from the linked project
+
 ## Usage
 ```javascript
 import { hasInternetConnection } from 'react-native-connection-status';
