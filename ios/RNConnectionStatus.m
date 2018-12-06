@@ -4,16 +4,18 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(hasInternetConnection:(RCTPromiseResolveBlock)resolve
-                  rejecter:(RCTPromiseRejectBlock)reject) {
+RCT_EXPORT_METHOD(hasInternetConnection:(RCTResponseSenderBlock)callback) {
 
     NSURL *scriptUrl = [NSURL URLWithString:@"https://www.google.com/m"];
     NSData *data = [NSData dataWithContentsOfURL:scriptUrl];
+    NSString *result;
 
     if (data)
-        resolve(@"true");
+        result = @"true";
     else
-        resolve(@"false");
+        result = @"false";
+
+    callback(@[result]);
 }
 
 @end
