@@ -31,7 +31,7 @@ can access the internet, it only checks if the device is connected to a network
 
 #### iOS
 
-1. In XCode, right-click the Libraries folder under your project ➜ Add Files to `<your project>`
+1. In XCode, right-click the Libraries folder under your project ➜ `Add Files to <your project>`
 
 2. Go to node_modules ➜ react-native-connection-status ➜ ios and add the `RNConnectionStatus.xcodeproj` file
 
