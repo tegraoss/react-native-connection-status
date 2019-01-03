@@ -38,10 +38,9 @@ can access the internet, it only checks if the device is connected to a network
 3. Go to your apps project settings ➜ "Build Phases" ➜ "Link Binary With Libraries" and add `libRNConnectionStatus.a` from the linked project
 
 ## Usage
-```javascript
+```ts
 import { hasInternetConnection } from 'react-native-connection-status';
 
-const myCallback = console.log;
-hasInternetConnection(myCallback);
+hasInternetConnection((isConnected: boolean) => console.log(isConnected))
 ```
   
